@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import {Text,View,} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from './screen/HomeScreen';
-import TranslateScreen from './screen/TranslateScreen';
-import MemoScreen from './screen/MemoScreen';
-import CommunityScreen from './screen/CommunityScreen';
+import HomeScreen from './screen/Home/HomeScreen';
+import TranslateScreen from './screen/Translate/TranslateScreen';
+import MemoScreen from './screen/Memo/MemoScreen';
+import CommunityScreen from './screen/Community/CommunityScreen';
 
 
 const Tab = createBottomTabNavigator();
