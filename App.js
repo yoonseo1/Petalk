@@ -2,11 +2,12 @@ import React, {Component} from 'react';
 import {Text,View,} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from './screen/HomeScreen';
-import TranslateScreen from './screen/TranslateScreen';
-import MemoScreen from './screen/MemoScreen';
-import CommunityScreen from './screen/CommunityScreen';
+import HomeScreen from './screen/Home/HomeScreen';
+import TranslateScreen from './screen/Translate/TranslateScreen';
+import MemoScreen from './screen/Memo/MemoScreen';
+import CommunityScreen from './screen/Community/CommunityScreen';
 
+import Feedback from './screen/Translate/Feedback';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,7 +19,7 @@ function MyTabs() {
        {(props) => <HomeScreen {...props} />}
       </Tab.Screen>
       <Tab.Screen name="Translate">
-       {(props) => <TranslateScreen {...props} />}
+       {(props) => <Feedback {...props} />}
       </Tab.Screen>
       <Tab.Screen name="Memo">
        {(props) => <MemoScreen {...props} />}
