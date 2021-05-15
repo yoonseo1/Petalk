@@ -1,22 +1,13 @@
 import React, {Component} from 'react';
-import {Text,View,Image,StyleSheet,TouchableOpacity} from 'react-native';
+import {Text,View,} from 'react-native';
 import Header from '../header';
-import { RadioButton } from 'react-native-paper';
-import {DrawerActions} from 'react-navigation-drawer';
 
 export default function HomeScreen() {
-  const [checked, setChecked] = React.useState('first');
   return (
-    <View>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor:'white' }}>
       <Header/>
+      <Text>Home!</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-    header:{
-        width:150,
-        height:60,
-
-    }
-})

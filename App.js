@@ -7,6 +7,7 @@ import TranslateScreen from './screen/Translate/TranslateScreen';
 import MemoScreen from './screen/Memo/MemoScreen';
 import CommunityScreen from './screen/Community/CommunityScreen';
 
+import Feedback from './screen/Translate/Feedback';
 
 const Tab = createBottomTabNavigator();
 

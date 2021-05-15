@@ -27,8 +27,26 @@ import {Text,View,Image,StyleSheet,TouchableOpacity} from 'react-native';
 //     </Drawer.Navigator>
 //   );
 // }
-
-const HomeScreen = ({navigation,route})=> {
+function HomeScreen({ navigation }) {
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Button
+          onPress={() => navigation.navigate('Notifications')}
+          title="Go to notifications"
+        />
+      </View>
+    );
+  }
+  
+  function NotificationsScreen({ navigation }) {
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Button onPress={() => navigation.goBack()} title="Go back home" />
+      </View>
+    );
+  }
+  
+const Header = ({navigation,route})=> {
 
   return (
     <View style={styles.header}>
@@ -48,7 +66,7 @@ const HomeScreen = ({navigation,route})=> {
   );
 }
 
-export default HomeScreen;
+export default Header;
 
 const styles = StyleSheet.create({
     header:{
