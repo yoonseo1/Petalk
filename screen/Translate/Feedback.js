@@ -11,12 +11,13 @@ const Feedback = () => {
       <View style = {styles.question}>
           <Text style = {styles.questiontext}>ㅇㅇ님의 감정상태는 어떤가요?</Text>
       </View>
-       <View>
+       <View style = {styles.viewstyle}>
         <View style = {styles.select}>
             <RadioButton
                 value="first"
                 status={ checked === 'first' ? 'checked' : 'unchecked' }
                 onPress={() => setChecked('first')} 
+                color = '#AFCFF1'
             />
             <Text style = {styles.text}>골골(행복해!!)</Text> 
         </View>
@@ -25,6 +26,7 @@ const Feedback = () => {
                 value="second"
                 status={ checked === 'second' ? 'checked' : 'unchecked' }
                 onPress={() => setChecked('second')}
+                color = '#AFCFF1'
             />
             <Text style = {styles.text}>야옹(배고파! 놀아줘!)</Text>
         </View>
@@ -33,6 +35,7 @@ const Feedback = () => {
                 value="third"
                 status={ checked === 'third' ? 'checked' : 'unchecked' }
                 onPress={() => setChecked('third')}
+                color = '#AFCFF1'
             />
             <Text style = {styles.text}>트릴링(반가워!))</Text>
         </View>
@@ -41,6 +44,7 @@ const Feedback = () => {
                 value="fourth"
                 status={ checked === 'fourth' ? 'checked' : 'unchecked' }
                 onPress={() => setChecked('fourth')}
+                color = '#AFCFF1'
             />
             <Text style = {styles.text}>채터링(사냥중이야!)</Text>
         </View>
@@ -49,6 +53,7 @@ const Feedback = () => {
                 value="fifth"
                 status={ checked === 'fifth' ? 'checked' : 'unchecked' }
                 onPress={() => setChecked('fifth')}
+                color = '#AFCFF1'
             />
             <Text style = {styles.text}>옐링(투덜투덜!)</Text>
         </View>
@@ -57,6 +62,7 @@ const Feedback = () => {
                 value="sixth"
                 status={ checked === 'sixth' ? 'checked' : 'unchecked' }
                 onPress={() => setChecked('sixth')}
+                color = '#AFCFF1'
             />
             <Text style = {styles.text}>하악질(경고해ㅡㅡ)</Text>
         </View>
@@ -65,6 +71,7 @@ const Feedback = () => {
                 value="seventh"
                 status={ checked === 'seventh' ? 'checked' : 'unchecked' }
                 onPress={() => setChecked('seventh')}
+                color = '#AFCFF1'
             />
             <Text style = {styles.text}>오오옹(건들면 물거야!)</Text>
         </View>
@@ -83,7 +90,7 @@ const Feedback = () => {
         style = {styles.button}
         onPress={()=>Alert.alert('피드백 완료')}
       >
-        <Text>완료</Text>
+        <Text style = {styles.font}>완료</Text>
       </TouchableOpacity>
     </View>
   );
@@ -92,18 +99,26 @@ export default Feedback;
 
 const styles = StyleSheet.create({
     question: {
-        width: '100%',
+        width: '95%',
         height: 50,
-        backgroundColor: '#85C1E9'
+        backgroundColor: '#AFCFF1',
+        justifyContent: 'center',
+        elevation: 5,
+        borderRadius: 5
     },
     questiontext: {
-        fontSize: 25
+        fontSize: 15,
+        paddingLeft: 5,
+        color: 'black'
     },
     select: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        
+        
     },
     text: {
-        paddingVertical: 7
+        paddingVertical: 5,
+        fontSize: 15
     },
     input: {
         
@@ -111,20 +126,34 @@ const styles = StyleSheet.create({
     board: {
         paddingVertical: 7,
         borderWidth: 1,
-        width: '100%',
-        borderRadius: 20,
-        marginTop: 10
+        width: '95%',
+        borderRadius: 10,
+        marginTop: 10,
+        borderColor: '#4C8ADB'
     },
     button: {
-        borderWidth: 1,
+        
         borderRadius: 10,
         height: 50,
         width: 100,
-        backgroundColor: 'white',
+        backgroundColor: '#87A8DA',
         borderColor: 'black',
         alignItems: 'center',
-        paddingVertical: 15,
+        justifyContent: 'center',
         marginTop: 10,
-        marginLeft: 270
-    }
+        marginLeft: 270,
+        elevation: 5
+    },
+    viewstyle: {
+        width: '100%',
+        marginLeft: 20,
+        marginBottom: 20,
+        marginTop: 10
+    },
+    font: {
+        fontSize: 15,
+        color: 'white'
+    },
+   
+    
 })
