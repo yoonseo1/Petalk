@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text,View,Image,StyleSheet,TouchableOpacity} from 'react-native';
+import {Text,View,Image,StyleSheet,Platform,TouchableOpacity} from 'react-native';
 // import { createDrawerNavigator } from '@react-navigation/drawer';
 
 // function Feed() {
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
         paddingHorizontal:10,
         backgroundColor:'white',
         position:'absolute',
-        top:50
+        top:Platform.OS === 'ios' ? 50 : 20
     },
     headerImg:{
         width:150,
