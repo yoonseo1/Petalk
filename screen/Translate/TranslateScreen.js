@@ -29,7 +29,7 @@ export default function TranslateScreen() {
         onPress={()=> setModalVisible(true)}
 
       >
-        {response ? (<Text>☺</Text>):(<Text>업로드</Text>)}
+        {response ? (<Text>재업로드</Text>):(<Text>업로드</Text>)}
       </TouchableOpacity>
       {response ? (<TouchableOpacity
         style = {styles.button}
