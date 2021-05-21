@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Text,View,TouchableOpacity, StyleSheet,Image, Modal } from 'react-native';
 import Header from '../header';
 import * as ImagePicker from "react-native-image-picker"
+import Icons from 'react-native-vector-icons/MaterialIcons';
 
 export default function TranslateScreen() {
 
@@ -29,7 +30,7 @@ export default function TranslateScreen() {
         onPress={()=> setModalVisible(true)}
 
       >
-        {response ? (<Text>재업로드</Text>):(<Text>업로드</Text>)}
+        {response ? (<Icons name="refresh"  size={30} />):(<Text>업로드</Text>)}
       </TouchableOpacity>
       {response ? (<TouchableOpacity
         style = {styles.button}
@@ -38,7 +39,7 @@ export default function TranslateScreen() {
         })}
 
       >
-        <Text>번역하기</Text>
+        <Icons name="done"  size={30} />
       </TouchableOpacity>)
       :
       null}
@@ -102,7 +103,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderColor: 'black',
     alignItems: 'center',
-    paddingVertical: 15
+    paddingVertical: 10
   },
   image: {
     marginVertical: 24,

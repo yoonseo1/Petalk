@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Text,View,Image,StyleSheet,Platform,TouchableOpacity} from 'react-native';
+import Icons from 'react-native-vector-icons/MaterialIcons';
 // import { createDrawerNavigator } from '@react-navigation/drawer';
 
 // function Feed() {
@@ -56,7 +57,7 @@ const Header = ({navigation,route})=> {
             <Image source={require('../resource/img/petalk.png')} style={styles.headerImg}/>
         </TouchableOpacity>
         <TouchableOpacity>
-            <Text>。。。</Text>
+          <Icons name="menu" color={'#131c2e'} size={30} style={{padding:10}}/>
         </TouchableOpacity>
         {/* <NavigationContainer>
             <MyDrawer />
