@@ -57,7 +57,7 @@ const Header = ({navigation,route})=> {
             <Image source={require('../resource/img/petalk.png')} style={styles.headerImg}/>
         </TouchableOpacity>
         <TouchableOpacity>
-          <Icons name="menu" color={'#131c2e'} size={30} style={{padding:10}}/>
+          {/* <Icons name="menu" color={'#131c2e'} size={30} style={{padding:10}}/> */}
         </TouchableOpacity>
         {/* <NavigationContainer>
             <MyDrawer />

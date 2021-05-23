@@ -7,7 +7,7 @@ const Feedback = () => {
     const [checked, setChecked] = React.useState('first');
     const [text, onChangeText] = React.useState("");
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center',backgroundColor:'white' }}>
       <View style = {styles.question}>
           <Text style = {styles.questiontext}>ㅇㅇ님의 감정상태는 어떤가요?</Text>
       </View>

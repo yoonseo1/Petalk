@@ -6,11 +6,14 @@ import HomeScreen from './screen/Home/HomeScreen';
 import TranslateScreen from './screen/Translate/TranslateScreen';
 import MemoScreen from './screen/Memo/MemoScreen';
 import CommunityScreen from './screen/Community/CommunityScreen';
+import MyPage from './screen/MyPage/MyPage';
+import Login from './screen/MyPage/Login';
 
 import Icon from 'react-native-vector-icons/Foundation';
 import Icons from 'react-native-vector-icons/MaterialIcons';
 
 import Feedback from './screen/Translate/Feedback';
+import Join from './screen/MyPage/Join';
 
 const Tab = createBottomTabNavigator();
 
@@ -65,6 +68,17 @@ function MyTabs() {
         }}
       >
        {(props) => <CommunityScreen {...props} />}
+      </Tab.Screen>
+      <Tab.Screen 
+        name="MyPage"
+        options={{
+          tabBarLabel: 'MyPage',
+          tabBarIcon: ({ color, size }) => (
+            <Icons name="person" color={color} size={size} />
+          ),
+        }}
+      >
+       {(props) => <Join {...props} />}
       </Tab.Screen>
     </Tab.Navigator>
   );
