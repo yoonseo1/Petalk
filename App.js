@@ -78,7 +78,7 @@ function MyTabs() {
           ),
         }}
       >
-       {(props) => <MyPage {...props} />}
+       {(props) => <Join {...props} />}
       </Tab.Screen>
     </Tab.Navigator>
   );

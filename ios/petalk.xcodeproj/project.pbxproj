@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1FCC72F30B2B8F0BBBC0A54E /* libPods-petalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6242FBEB4B8120A990D1C10A /* libPods-petalk.a */; };
+		563C0C717F13BAA0AA747D73 /* libPods-petalk-petalkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 024B6ABED7DBE4B091399144 /* libPods-petalk-petalkTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		DDE5615444E5A8D3AAAF9AF6 /* libPods-petalk-petalkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD209FA33AB99AA1206CECD6 /* libPods-petalk-petalkTests.a */; };
-		F91952934B3E1CBB83624522 /* libPods-petalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B3912BEBDEA75F3D0D4D83 /* libPods-petalk.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,23 +27,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0034717DDC7C25CA710F6827 /* Pods-petalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petalk.debug.xcconfig"; path = "Target Support Files/Pods-petalk/Pods-petalk.debug.xcconfig"; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* petalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = petalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* petalkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = petalkTests.m; sourceTree = "<group>"; };
-		06F63119258A450F0E80DE3B /* Pods-petalk-petalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petalk-petalkTests.debug.xcconfig"; path = "Target Support Files/Pods-petalk-petalkTests/Pods-petalk-petalkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		024B6ABED7DBE4B091399144 /* libPods-petalk-petalkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-petalk-petalkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* petalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = petalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = petalk/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = petalk/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = petalk/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = petalk/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = petalk/main.m; sourceTree = "<group>"; };
-		53B3912BEBDEA75F3D0D4D83 /* libPods-petalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-petalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		551EF52CE309E2ED98838407 /* Pods-petalk-petalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petalk-petalkTests.release.xcconfig"; path = "Target Support Files/Pods-petalk-petalkTests/Pods-petalk-petalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		6242FBEB4B8120A990D1C10A /* libPods-petalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-petalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = petalk/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		827A48FBBEC796E470CF5B18 /* Pods-petalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petalk.release.xcconfig"; path = "Target Support Files/Pods-petalk/Pods-petalk.release.xcconfig"; sourceTree = "<group>"; };
-		BD209FA33AB99AA1206CECD6 /* libPods-petalk-petalkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-petalk-petalkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F97C45C8616CE236CF0BE84 /* Pods-petalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petalk.debug.xcconfig"; path = "Target Support Files/Pods-petalk/Pods-petalk.debug.xcconfig"; sourceTree = "<group>"; };
+		CE3B23B16AC928116C1ED319 /* Pods-petalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petalk.release.xcconfig"; path = "Target Support Files/Pods-petalk/Pods-petalk.release.xcconfig"; sourceTree = "<group>"; };
+		DE0C16408F967F0D5A2426AA /* Pods-petalk-petalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petalk-petalkTests.release.xcconfig"; path = "Target Support Files/Pods-petalk-petalkTests/Pods-petalk-petalkTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F19220CE078FB843863C8AF4 /* Pods-petalk-petalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petalk-petalkTests.debug.xcconfig"; path = "Target Support Files/Pods-petalk-petalkTests/Pods-petalk-petalkTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDE5615444E5A8D3AAAF9AF6 /* libPods-petalk-petalkTests.a in Frameworks */,
+				563C0C717F13BAA0AA747D73 /* libPods-petalk-petalkTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F91952934B3E1CBB83624522 /* libPods-petalk.a in Frameworks */,
+				1FCC72F30B2B8F0BBBC0A54E /* libPods-petalk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,19 +100,19 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				53B3912BEBDEA75F3D0D4D83 /* libPods-petalk.a */,
-				BD209FA33AB99AA1206CECD6 /* libPods-petalk-petalkTests.a */,
+				6242FBEB4B8120A990D1C10A /* libPods-petalk.a */,
+				024B6ABED7DBE4B091399144 /* libPods-petalk-petalkTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6A2FE7DCD81AFB8C928ADF30 /* Pods */ = {
+		329D762B72B0D8220ACDE3A6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0034717DDC7C25CA710F6827 /* Pods-petalk.debug.xcconfig */,
-				827A48FBBEC796E470CF5B18 /* Pods-petalk.release.xcconfig */,
-				06F63119258A450F0E80DE3B /* Pods-petalk-petalkTests.debug.xcconfig */,
-				551EF52CE309E2ED98838407 /* Pods-petalk-petalkTests.release.xcconfig */,
+				8F97C45C8616CE236CF0BE84 /* Pods-petalk.debug.xcconfig */,
+				CE3B23B16AC928116C1ED319 /* Pods-petalk.release.xcconfig */,
+				F19220CE078FB843863C8AF4 /* Pods-petalk-petalkTests.debug.xcconfig */,
+				DE0C16408F967F0D5A2426AA /* Pods-petalk-petalkTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -133,8 +133,8 @@
 				00E356EF1AD99517003FC87E /* petalkTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				6A2FE7DCD81AFB8C928ADF30 /* Pods */,
 				8B17E656E95B43C18F7100DE /* Resources */,
+				329D762B72B0D8220ACDE3A6 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -165,12 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "petalkTests" */;
 			buildPhases = (
-				486E61A23DC2AFCDC0276500 /* [CP] Check Pods Manifest.lock */,
+				F365AE1E5D819E74AEDB0ADF /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				3C8A343B1E1BDF5CA160D1CF /* [CP] Embed Pods Frameworks */,
-				B9C3CFC3E762D1C617F05B3D /* [CP] Copy Pods Resources */,
+				5FEDABA77A9452D33A99B6F0 /* [CP] Embed Pods Frameworks */,
+				772157DB617A51AC4DFE0107 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,14 +186,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "petalk" */;
 			buildPhases = (
-				9357B58FEF8A0E5C06D2ACEE /* [CP] Check Pods Manifest.lock */,
+				AF1EBF8F3E9AB36DB9276E66 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				015719969208A425CA0C32BF /* [CP] Embed Pods Frameworks */,
-				12D9FB3877BCF231C1181139 /* [CP] Copy Pods Resources */,
+				CF61B744171A5B9B265F34CB /* [CP] Embed Pods Frameworks */,
+				4307EB1E8D26FD5C295AAEDA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,24 +274,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		015719969208A425CA0C32BF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-petalk/Pods-petalk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-petalk/Pods-petalk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-petalk/Pods-petalk-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		12D9FB3877BCF231C1181139 /* [CP] Copy Pods Resources */ = {
+		4307EB1E8D26FD5C295AAEDA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,7 +291,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-petalk/Pods-petalk-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3C8A343B1E1BDF5CA160D1CF /* [CP] Embed Pods Frameworks */ = {
+		5FEDABA77A9452D33A99B6F0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,29 +308,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-petalk-petalkTests/Pods-petalk-petalkTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		486E61A23DC2AFCDC0276500 /* [CP] Check Pods Manifest.lock */ = {
+		772157DB617A51AC4DFE0107 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-petalk-petalkTests/Pods-petalk-petalkTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-petalk-petalkTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-petalk-petalkTests/Pods-petalk-petalkTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-petalk-petalkTests/Pods-petalk-petalkTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9357B58FEF8A0E5C06D2ACEE /* [CP] Check Pods Manifest.lock */ = {
+		AF1EBF8F3E9AB36DB9276E66 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -369,21 +347,43 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B9C3CFC3E762D1C617F05B3D /* [CP] Copy Pods Resources */ = {
+		CF61B744171A5B9B265F34CB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-petalk-petalkTests/Pods-petalk-petalkTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-petalk/Pods-petalk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-petalk-petalkTests/Pods-petalk-petalkTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-petalk/Pods-petalk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-petalk-petalkTests/Pods-petalk-petalkTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-petalk/Pods-petalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F365AE1E5D819E74AEDB0ADF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-petalk-petalkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -438,7 +438,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06F63119258A450F0E80DE3B /* Pods-petalk-petalkTests.debug.xcconfig */;
+			baseConfigurationReference = F19220CE078FB843863C8AF4 /* Pods-petalk-petalkTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -465,7 +465,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 551EF52CE309E2ED98838407 /* Pods-petalk-petalkTests.release.xcconfig */;
+			baseConfigurationReference = DE0C16408F967F0D5A2426AA /* Pods-petalk-petalkTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -489,7 +489,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0034717DDC7C25CA710F6827 /* Pods-petalk.debug.xcconfig */;
+			baseConfigurationReference = 8F97C45C8616CE236CF0BE84 /* Pods-petalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -515,7 +515,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 827A48FBBEC796E470CF5B18 /* Pods-petalk.release.xcconfig */;
+			baseConfigurationReference = CE3B23B16AC928116C1ED319 /* Pods-petalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

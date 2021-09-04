@@ -12,9 +12,9 @@ export default function TranslateScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor:'white' }}>
       <Header/>
-        {/* <View style={styles.response}>
+         <View style={styles.response}>
           <Text>Res: {JSON.stringify(response)}</Text>
-        </View> */}
+        </View> 
 
         {response && (
           <View style={styles.image}>
@@ -62,6 +62,7 @@ export default function TranslateScreen() {
                 ImagePicker.launchCamera({mediaType: 'video'}, (response) => {
                   setResponse(response);
                   setModalVisible(false);
+                  console.log(JSON.stringify(response));
                 })
               }
             >

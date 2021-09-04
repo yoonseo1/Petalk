@@ -75,5 +75,10 @@
 		<string>Octicons.ttf</string>
 		<string>Zocial.ttf</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+
 </dict>
 </plist>
