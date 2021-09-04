@@ -4,6 +4,30 @@ import Header from '../header';
 import * as ImagePicker from "react-native-image-picker"
 import Icons from 'react-native-vector-icons/MaterialIcons';
 
+const postVideo = (duration,fileName,fileUri,memberId,size)=>{
+
+  let data={
+    "duration": duration,
+    "fileName": fileName,
+    "fileUri": fileUri,
+    "memberId": 1,
+    "size": size
+  }
+  console.log("data",data);
+  fetch("http://10.0.2.2:8080/api/video/upload",{
+                  method : "POST",
+                  body : JSON.stringify(data),
+                  headers:{
+                      'Content-Type': 'application/json'
+                  }
+              })
+              .then(res => res.json())
+              .then(res => console.log(res))
+              .catch((error)=>{
+                  console.log("Api call error");
+                  console.log(error.message);
+              });
+}
 export default function TranslateScreen() {
 
   const [response, setResponse] = React.useState(null);
@@ -62,7 +86,8 @@ export default function TranslateScreen() {
                 ImagePicker.launchCamera({mediaType: 'video'}, (response) => {
                   setResponse(response);
                   setModalVisible(false);
-                  console.log(JSON.stringify(response));
+                  console.log(response);
+                  postVideo(response.duration,response.fileName,response.uri,1,response.fileSize);
                 })
               }
             >

@@ -11,7 +11,7 @@ const postMember = (userId,userName,userNickName,userPassword,userEmail)=>{
         "profileUrl": null,
         "userId": userId
     }
-    fetch("http://localhost:8080/api/member/new",{
+    fetch("http://10.0.2.2:8080/api/member/new",{
                     method : "POST",
                     body : JSON.stringify(data),
                     headers:{
@@ -27,12 +27,12 @@ const postMember = (userId,userName,userNickName,userPassword,userEmail)=>{
 }
 
 const Join = () => {
-    const [userId, setUserId] = React.useState('');
-    const [userPassword, setUserPassword] = React.useState('');
-    const [userPasswordchk, setUserPasswordchk] = React.useState('');
-    const [userName, setUserName] = React.useState('');
-    const [userEmail, setUserEmail] = React.useState('');
-    const [userNickName, setUserNickName] = React.useState('');
+    const [userId, setUserId] = React.useState("");
+    const [userPassword, setUserPassword] = React.useState("");
+    const [userPasswordchk, setUserPasswordchk] = React.useState("");
+    const [userName, setUserName] = React.useState("");
+    const [userEmail, setUserEmail] = React.useState("");
+    const [userNickName, setUserNickName] = React.useState("");
     const [checked, setChecked] = React.useState('first');
     const [text, onChangeText] = React.useState("");
     const [number, onChangeNumber] = React.useState(null);
@@ -48,7 +48,7 @@ const Join = () => {
             <View style = {styles.board}>
             <TextInput
                 style={styles.input}
-                onChangeText={(userName)=>setUserName([userName])}
+                onChangeText={(userName)=>setUserName(userName)}
                 value={userName}
                 placeholder = 'username'
             />
