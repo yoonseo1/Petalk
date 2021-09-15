@@ -26,7 +26,7 @@ const postMember = (userId,userName,userNickName,userPassword,userEmail)=>{
                 });
 }
 
-const Join = () => {
+const Join = ({navigation}) => {
     const [userId, setUserId] = React.useState("");
     const [userPassword, setUserPassword] = React.useState("");
     const [userPasswordchk, setUserPasswordchk] = React.useState("");
@@ -116,7 +116,10 @@ const Join = () => {
 
             <TouchableOpacity
                 style = {styles.button}
-                onPress={()=>postMember(userId,userName,userNickName,userPassword,userEmail)}
+                onPress={()=>{
+                    postMember(userId,userName,userNickName,userPassword,userEmail)
+                    navigation.navigate('Login')
+                }}
             >
                 <Text style = {styles.font}>회원가입</Text>
             </TouchableOpacity>
@@ -153,7 +156,8 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         width: '95%',
         height: 50,
-        borderColor: '#4C8ADB'
+        borderColor: '#4C8ADB',
+        borderRadius: 10,
     },
     button: {
         
@@ -171,7 +175,7 @@ const styles = StyleSheet.create({
         width: '100%',
         marginLeft: 20,
         marginBottom: 20,
-        marginTop: 10
+        marginTop: 10,
     },
     font: {
         fontSize: 15,

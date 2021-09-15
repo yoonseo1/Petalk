@@ -2,18 +2,24 @@ import React, {Component} from 'react';
 import {Text,View,} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
+
 import HomeScreen from './screen/Home/HomeScreen';
-import TranslateScreen from './screen/Translate/TranslateScreen';
+
 import MemoScreen from './screen/Memo/MemoScreen';
-import CommunityScreen from './screen/Community/CommunityScreen';
-import MyPage from './screen/MyPage/MyPage';
+
+import MyPage from './screen/MyPage/UserProfile';
+import Join from './screen/MyPage/Join';
 import Login from './screen/MyPage/Login';
+
+import CommunityScreen from './screen/Community/CommunityScreen';
+
+import MyPetScreen from './screen/MyPet/MyPet';
+import Feedback from './screen/MyPet/Feedback';
 
 import Icon from 'react-native-vector-icons/Foundation';
 import Icons from 'react-native-vector-icons/MaterialIcons';
 
-import Feedback from './screen/Translate/Feedback';
-import Join from './screen/MyPage/Join';
 
 const Tab = createBottomTabNavigator();
 
@@ -37,15 +43,15 @@ function MyTabs() {
        {(props) => <HomeScreen {...props} />}
       </Tab.Screen>
       <Tab.Screen 
-        name="Translate"
+        name="MyPet"
         options={{
-          tabBarLabel: 'Translate',
+          tabBarLabel: 'Pet',
           tabBarIcon: ({ color, size }) => (
             <Icons name="pets" color={color} size={size} />
           ),
         }}
       >
-       {(props) => <TranslateScreen {...props} />}
+       {(props) => <MyPetScreen {...props} />}
       </Tab.Screen>
       <Tab.Screen 
         name="Memo"
@@ -71,18 +77,27 @@ function MyTabs() {
       </Tab.Screen>
       <Tab.Screen 
         name="MyPage"
+        component={MyPageStackScreen}
         options={{
           tabBarLabel: 'MyPage',
           tabBarIcon: ({ color, size }) => (
             <Icons name="person" color={color} size={size} />
           ),
         }}
-      >
-       {(props) => <Join {...props} />}
-      </Tab.Screen>
+      />
     </Tab.Navigator>
   );
 }
+const MyPageStack = createStackNavigator();
+
+function MyPageStackScreen() {
+  return (
+    <MyPageStack.Navigator>
+      <MyPageStack.Screen name="Join" component={Join} />
+      <MyPageStack.Screen name="Login" component={Login} />
+    </MyPageStack.Navigator>
+  );
+} 
 
 export default function App() {
   return (

@@ -37,7 +37,7 @@ const ENTRIES1 = [
 const {width: screenWidth} = Dimensions.get('window');
 
 
-const MyPage=()=> {
+const MyPet=()=> {
 
     const [entries, setEntries] = useState([]);
     const [modal, setModal] = useState(false);
@@ -64,90 +64,19 @@ const MyPage=()=> {
         
         <View style={styles.profile}>
             <Image source={item.url} style={styles.profileImg} />
-            {edit ? 
-            (<View>
-                <View style={styles.editInput}>
-                    <Text style = {styles.info}>Name : </Text>
-                    <TextInput
-                        style={styles.nameInput}
-                        onChangeText={(value)=>{
-                            setName(value)
-                            // setInfo()
-                            console.log(name)
-                        }}
-                        value={name}
-                    />
-                </View>
-                <View style={styles.editInput}>
-                    <Text style = {styles.info}>Age : </Text>
-                    <TextInput
-                        style={styles.nameInput}
-                        onChangeText={(value)=>{
-                            setAge(value)
-                            console.log(age)
-                        }}
-                        value={age}
-                    />
-                </View>
-                <View style={styles.editInput}>
-                    <Text style = {styles.info}>Gender : </Text>
-                    <TextInput
-                        style={styles.nameInput}
-                        onChangeText={(value)=>{
-                            setGender(value)
-                            console.log(gender)
-                        }}
-                        value={gender}
-                    />
-                </View>
-                <View style={styles.editInput}>
-                    <Text style = {styles.info}>Type : </Text>
-                    <TextInput
-                        style={styles.nameInput}
-                        onChangeText={(value)=>{
-                            setType(value)
-                            console.log(type)
-                        }}
-                        value={type}
-                    />
-                </View>
-            </View>)
-            :
-            (<View>
+            <View>
                 <Text style = {styles.name}>{item.props.name}님</Text>
                 <Text style = {styles.info}>Age : {item.props.age}살</Text>
                 <Text style = {styles.info}>Gender : {item.props.gender}</Text>
                 <Text style = {styles.info}>Type : {item.props.type}</Text>
-            </View>)
-            }
-            {edit?
-            (<TouchableOpacity style={styles.edit} onPress={()=>{
-                setEdit(false)
-                setEntries({
-                    url: {uri:'https://placekitten.com/200/300'},
-                    props:{
-                        name: name,
-                        age: age,
-                        gender: gender,
-                        type: type,
-                    }})
-            }}
+            </View>
+            
+            <TouchableOpacity 
+                style={styles.delete} 
+                onPress={()=>console.log("펫 삭제")}
             >
-                <Icons name="done" color={'#304674'} size={25}/>
-            </TouchableOpacity>)
-            :
-            (<TouchableOpacity 
-                style={styles.edit} 
-                onPress={()=>{
-                    setName(item.props.name)
-                    setAge(item.props.age)
-                    setGender(item.props.gender)
-                    setType(item.props.type)
-                    setEdit(true)  
-                }}
-            >
-                <Icons name="edit" color={'#304674'} size={25}/>
-            </TouchableOpacity>)}
+                <Icons name="delete" color={'#304674'} size={25}/>
+            </TouchableOpacity>
             
         </View>
     );
@@ -155,6 +84,16 @@ const MyPage=()=> {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor:'white' }}>
         <Header/>
+        
+        <TouchableOpacity 
+                style={styles.plus} 
+                onPress={()=>{
+                    setModal(true)  
+                }}
+            >
+            <Icons name="add" color={'#304674'} size={25}/>
+        </TouchableOpacity>
+
         <View style={styles.carouselContainer}>
             <Carousel
                 sliderWidth={screenWidth}
@@ -166,14 +105,7 @@ const MyPage=()=> {
                 loop={true}
             />
         </View>
-        <TouchableOpacity 
-                style={styles.plus} 
-                onPress={()=>{
-                    setModal(true)  
-                }}
-            >
-            <Icons name="add" color={'#304674'} size={25}/>
-        </TouchableOpacity>
+        
         <Modal
                 style={styles.centeredView}
                 visible={modal}
@@ -229,7 +161,7 @@ const MyPage=()=> {
                 </View>
                 <Pressable
                 style={[styles.button, styles.buttonClose]}
-                onPress={() => setModal(!modal)}
+                onPress={() => {setModal(!modal),console.log("펫추가")}}
                 >
                 <Text style={styles.textStyle}>추가</Text>
                 </Pressable>
@@ -239,7 +171,7 @@ const MyPage=()=> {
   );
 }
 
-export default MyPage;
+export default MyPet;
 const styles = StyleSheet.create({
     centeredView: {
         flex: 1,
@@ -302,8 +234,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginTop:30,
+        marginBottom:-20,
     },
-    edit:{
+    delete:{
         marginLeft:250,
         marginTop:10,
     },

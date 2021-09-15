@@ -3,7 +3,7 @@ import {Text,View,TouchableOpacity, StyleSheet, TextInput, Alert, Image } from '
 import Header from '../header';
 import Icon from 'react-native-vector-icons/Foundation';
 
-const Login = () => {
+const Login = ({navigation}) => {
     const [checked, setChecked] = React.useState('first');
     const [id, onChangeId] = React.useState("");
     const [password, onChangePw] = React.useState("");
@@ -35,7 +35,7 @@ const Login = () => {
         <Text style = {styles.login}>로그인</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={()=>Alert.alert('회원가입')}
+        onPress={()=>navigation.navigate('Join')}
       >
         <Text style = {styles.join}>회원가입</Text>
       </TouchableOpacity>
