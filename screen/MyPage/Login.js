@@ -2,6 +2,37 @@ import React, {Component} from 'react';
 import {Text,View,TouchableOpacity, StyleSheet, TextInput, Alert, Image } from 'react-native';
 import Header from '../header';
 import Icon from 'react-native-vector-icons/Foundation';
+import * as KakaoLogins from '@react-native-seoul/kakao-login';
+import {
+  login,
+} from '@react-native-seoul/kakao-login';
+
+if (!KakaoLogins) {
+  console.log("KakaoLogins");
+}
+const kakaoLogin = async () => {
+  const token = await login();
+  console.log(JSON.stringify(token));
+  // setResult(JSON.stringify(token));
+};
+
+// const kakaoLogin = async () => {
+//   try {
+//     let result = await KakaoLogins.login();
+//     if (result) {
+//       await this.getProfile();
+//       await AsyncStorage.setItem("userToken", result.accessToken);
+//       this.props.navigation.navigate("App");
+//       console.log(`Login Finished:${JSON.stringify(result)}`);
+//     }
+//   } catch (err) {
+//     if (err.code === "E_CANCELLED_OPERATION") {
+//       console.log(`Login Cancelled:${err.message}`);
+//     } else {
+//       console.log(`Login Failed:${err.code} ${err.message}`);
+//     }
+//   }
+// };
 
 const Login = ({navigation}) => {
     const [checked, setChecked] = React.useState('first');
@@ -41,7 +72,11 @@ const Login = ({navigation}) => {
       </TouchableOpacity>
       <TouchableOpacity
         style = {styles.kakao}
-        onPress={()=>Alert.alert('카카오로그인')}
+        onPress={()=>{
+          // Alert.alert('카카오로그인')
+          kakaoLogin()
+        }
+        }
       >
         <Image source={require("../../resource/img/kakao.png")} style={styles.kakaoImg} />
         
